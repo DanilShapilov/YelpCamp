@@ -27,7 +27,33 @@ const seedDB = async () => {
       title: `${sample(descriptors)} ${sample(places)}`,
       image: 'https://source.unsplash.com/collection/483251',
       description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia assumenda obcaecati aliquid tempore neque cum cumque temporibus voluptates ipsa soluta qui officia quasi doloremque, architecto nemo repudiandae? Fugiat, architecto sed.',
-      price
+      price,
+      images: [
+        {
+          "url": "https://res.cloudinary.com/ds225/image/upload/v1629259762/YelpCamp/yynjfkkt60ura4lly5ii.png",
+          "filename": "YelpCamp/yynjfkkt60ura4lly5ii"
+        },
+        {
+          "url": "https://res.cloudinary.com/ds225/image/upload/v1629258457/YelpCamp/hep6dmonirigds5w452l.png",
+          "filename": "YelpCamp/hep6dmonirigds5w452l"
+        },
+        {
+          "url": "https://res.cloudinary.com/ds225/image/upload/v1629258457/YelpCamp/yidymoxaeyxonirm1fdl.jpg",
+          "filename": "YelpCamp/yidymoxaeyxonirm1fdl"
+        },
+        {
+          "url": "https://res.cloudinary.com/ds225/image/upload/v1629257155/YelpCamp/hz4mo2jfxubukrzafhzx.jpg",
+          "filename": "YelpCamp/hz4mo2jfxubukrzafhzx"
+        },
+        {
+          "url": "https://res.cloudinary.com/ds225/image/upload/v1629198374/YelpCamp/jcxiwzpbqoqjthqlzj7j.jpg",
+          "filename": "YelpCamp/jcxiwzpbqoqjthqlzj7j"
+        },
+        {
+          "url": "https://res.cloudinary.com/ds225/image/upload/v1629198372/YelpCamp/jxydk6r90lpthwbcmucc.jpg",
+          "filename": "YelpCamp/jxydk6r90lpthwbcmucc"
+        }
+      ]
     })
     await camp.save()
   }
